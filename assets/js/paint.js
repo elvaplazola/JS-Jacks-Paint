@@ -1,4 +1,9 @@
+//I was unable to remove opacity when hovering over
 
+function handleMouseOver(event){
+    event.target.classList.add('opacity');
+    getProductInfo(event.target.id)
+}
 
 function configureListeners() {
     let images = document.querySelectorAll('img');  
@@ -41,48 +46,48 @@ function getProductInfo(paintColor) {
     switch (paintColor) {
         case 'pn1':           
           price = 14.99;
-          updatePrice(colorName, price);
           colorName= 'Lime Green';
+          updatePrice(colorName, price);
             break;           
         case 'pn2':
             price = 11.14;
-            updatePrice(colorName, price);
           colorName= 'Medium Brown'
+          updatePrice(colorName, price);
             break;            
         case 'pn3':
             price = 22.99;
-            updatePrice(colorName, price);
           colorName= 'Royal Blue';
+          updatePrice(colorName, price);
             break;   
         case 'pn4':
             price = 4.99;
-            updatePrice(colorName, price);
           colorName= 'Solid Black'
+          updatePrice(colorName, price);
             break;   
         case 'pn5':
             price = 8.22;
-            updatePrice(colorName, price);
           colorName= 'Solid Cyan'
+          updatePrice(colorName, price);
             break;   
         case 'pn6':
             price = 11.99;
-            updatePrice(colorName, price);
           colorName='Solid Purple'
+          updatePrice(colorName, price);
             break;   
         case 'pn7':
             price = 13.42;
-            updatePrice(colorName, price);
           colorName= 'Solid Red'
+          updatePrice(colorName, price);
             break;   
         case 'pn8':
             price = 21.98;
-            updatePrice(colorName, price);
-          colorName= 'Solid White'  
+          colorName= 'Solid White' 
+          updatePrice(colorName, price); 
             break;   
         case 'pn9':
             price = 14.99;
-            updatePrice(colorName, price);
             colorName= 'Solid Yellow'
+            updatePrice(colorName, price);
             break;   
           default:              
     }
